@@ -25,7 +25,7 @@ npm install sms-node --save
 ## Requirements
 
 - [ ] Node version >= 6.x.x
-- [ ] Register an account at [converssage.com](http://converssage.com){:target="_blank}
+- [ ] Register an account at [converssage.com](http://converssage.com)
 
 ## Features
 
@@ -52,9 +52,9 @@ const settings = {
 const sender = new SMS(settings);
 ```
 
-- **user**: user name from your account at [converssage.com](http://converssage.com){:target="_blank}
+- **user**: user name from your account at [converssage.com](http://converssage.com)
 - **password**: your account password
-- **url**: (optional) [converssage.com](http://converssage.com){:target="_blank} gateway url, should not be changed
+- **url**: (optional) [converssage.com](http://converssage.com) gateway url, should not be changed, defaults to `https://gateway.plusmms.net/rest/message`
 
 ### 2. Define message data
 
