@@ -25,7 +25,7 @@ npm install sms-node --save
 ## Requirements
 
 - [ ] Node version >= 6.x.x
-- [ ] Register an account at <a href="http://comverssage.com" target="_blank">conversage.com</a>
+- [ ] Register an account at <a href="http://converssage.com" target="_blank">converssage.com</a>
 
 ## Features
 
@@ -54,9 +54,9 @@ const settings = {
 const sender = new SMS(settings);
 ```
 
-- **user**: user name from your account at <a href="http://comverssage.com" target="_blank">comverssage.com</a>
+- **user**: user name from your account at <a href="http://converssage.com" target="_blank">converssage.com</a>
 - **password**: your account password
-- **url**: (optional) <a href="http://comverssage.com" target="_blank">comverssage.com</a> gateway url, should not be changed
+- **url**: (optional) <a href="http://converssage.com" target="_blank">converssage.com</a> gateway url, should not be changed
 
 ### 2. Define message data
 
