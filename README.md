@@ -1,7 +1,7 @@
 Node Send SMS
 ========
 
-A node.js module for sender SMS.
+A node.js module that allows to send SMS.
 
 [![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://npmjs.org/package/sms-node)
 [![NPM version](http://img.shields.io/npm/v/sms-node.svg?style=flat)](https://npmjs.org/package/sms-node)
@@ -45,11 +45,9 @@ Setup your account settings to send SMS:
 const SMS = require('sms-node');
 
 const settings = {
-    sms: {
-        user: 'Pepe',
-        password: 'xxx',
-        url: 'https://gateway.plusmms.net/rest/message',
-   },
+    user: 'Pepe',
+    password: 'xxx',
+    url: 'https://gateway.plusmms.net/rest/message',
 };
 const sender = new SMS(settings);
 ```
