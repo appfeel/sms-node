@@ -1,0 +1,12 @@
+.git
+.DS_Store
+*.log
+node_modules/
+tmp
+.idea/
+coverage/
+.sonar
+.vscode/
+
+test/
+src/

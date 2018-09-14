@@ -1,0 +1,70 @@
+{
+  "name": "sms-node",
+  "version": "1.0.0",
+  "description": "send sms with node.js, register at converssage.com",
+  "main": "index.js",
+  "scripts": {
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "test-cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha test/ -- --require babel-core/register --recursive; open-cli ./coverage/lcov-report/index.html",
+    "test": "./node_modules/.bin/_mocha test/ --require babel-core/register --recursive",
+    "build": "./node_modules/.bin/babel src -d lib",
+    "prepare": "npm run lint && npm test && npm run build",
+    "lint": "eslint {src,test}/**/*.js",
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appfeel/sms-node.git"
+  },
+  "keywords": [
+    "node",
+    "sms",
+    "mobile",
+    "notifications"
+  ],
+  "author": {
+    "name": "AppFeel",
+    "email": "info@appfeel.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/appfeel/sms-node/issues"
+  },
+  "engines": {
+    "node": ">=6.x.x"
+  },
+  "eslintConfig": {
+    "ecmaVersion": 6,
+    "env": {
+      "es6": true,
+      "node": true
+    }
+  },
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/appfeel/sms-node",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-react": "^7.10.0",
+    "istanbul": "^1.1.0-alpha.1",
+    "mocha": "^5.2.0",
+    "open-cli": "^1.0.5",
+    "opn": "^5.3.0",
+    "release-it": "^7.4.7",
+    "sinon": "^1.17.6",
+    "sinon-chai": "^3.2.0"
+  },
+  "dependencies": {
+    "btoa": "^1.2.1",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  }
+}

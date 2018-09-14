@@ -1,0 +1,13 @@
+.DS_Store
+.git
+*.log
+node_modules
+tmp
+.idea
+.vscode/
+test/logs
+test/settings-gateway.js
+coverage
+.sonar
+lib
+release.sh
