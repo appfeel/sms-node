@@ -6,7 +6,7 @@ tmp
 .idea
 .vscode/
 test/logs
-test/settings-gateway.js
+test/settings-gateway.json
 coverage
 .sonar
 lib
