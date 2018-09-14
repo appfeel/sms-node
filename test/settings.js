@@ -13,9 +13,9 @@ let gsettings2 = {
 };
 
 try {
-    const upsettings = JSON.parse(fs.readFileSync('./settings-gateway.json'));
-    gsettings = upsettings.settings;
-    gsettings2 = upsettings.settings2;
+    const privateSettings = JSON.parse(fs.readFileSync('./settings-gateway.json'));
+    gsettings = privateSettings.settings;
+    gsettings2 = privateSettings.settings2;
 } catch (e) {} // eslint-disable-line no-empty
 
 export const settings = {
